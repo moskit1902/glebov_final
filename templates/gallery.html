@@ -1,0 +1,35 @@
+<div class="breadcrumbs" ncy-breadcrumb></div>
+<h2 class="content-header">Image gallery</h2>
+<div class="clear-fix"></div>
+<div class="nav">
+	<ul>
+		<li><span ng-if="!showSubmenu" ng-click="toggle()">&#9658;</span>
+			<span ng-if="showSubmenu" ng-click="toggle()">&#9660;</span>
+			<a ui-sref="menu">Menu</a>
+			<ul ng-if="showSubmenu">
+				<li><a ui-sref="menuReg">Regular menu</a>
+				<li><a ui-sref="menuBan">Banquet menu</a>
+				<li><a ui-sref="menuWine">Wine list</a>
+			</ul>
+		<li><a ui-sref="reservation">Reservation</a>
+		<li><a ui-sref="gallery" class="opened">Gallery</a>
+		<li><a ui-sref="events">Events</a>
+		<li><a ui-sref="about">About us</a>
+		<li><a ui-sref="contacts">Contacts</a>
+	</ul>	
+</div>
+<div class="gallery-wrapper">
+	<div class='gallery'>
+		<ul>
+			<li ng-repeat="item in gallery | startFrom: startingItem() | limitTo: itemsPerPage">
+				<img ng-src= "{{ item.imgSrc }}" alt="{{ item.alt}}">
+			</li>
+		</ul>
+	</div>
+	<div class="pagination">
+	    <input type="button" ng-class="firstPage() ? 'disabled-pagin-page' : 'pagin-page'" value="<<" ng-disabled="firstPage()" ng-click="pageBack()"><!--
+	    --><input type="button" ng-repeat="numberOfPage in pages()" ng-click="pageSet(numberOfPage)" ng-class="numberOfPage==currentPage+1 ? 'active-pagin-page' : 'pagin-page'" ng-disabled="numberOfPage==currentPage+1" value="{{ numberOfPage }}"><!--
+	    --><input type="button"  ng-class="lastPage() ? 'disabled-pagin-page' : 'pagin-page'" ng-disabled="lastPage()" ng-click="pageForward()" value=">>">
+    </div>
+</div>
+

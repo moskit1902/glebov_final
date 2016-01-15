@@ -1,0 +1,32 @@
+<div class="breadcrumbs" ncy-breadcrumb></div>
+<div class="reserve-wrapper">
+    <div class="reserve">
+        <p ng-if="!userInput.userChoice.number" ng-class="showError ? 'error' : ' '">Please select your table</p>
+        <p ng-if="userInput.userChoice.number">You've selected table #{{userInput.userChoice.number}}</p>
+        <img src="../img/rest_plan.png" alt="Restaurant plan">
+        <input type="button" ng-repeat="table in tables" ng-disabled="table.booked" ng-click="book(table)" ng-attr-id="{{ 'table' + table.number }}"  ng-class="userInput.userChoice == table ? 'selected' : table.booked ? 'booked' : 'available'" value="{{table.number}}">
+    </div>
+    <div class="reserve-form">
+        <form name="form" ng-show="showForm">
+            <h2>Please enter your contact information</h2>
+            <p>Your name:</p>
+            <input ng-model="userInput.userName" type="text">
+            <p>Your phone number:</p>
+            <input ng-model="userInput.userPhoneNumber" type="number">
+            <p>Select time:</p>
+            <select  ng-model="userInput.userTime">
+                <option value="14:00">2 PM</option>
+                <option value="15:00">3 PM</option>
+                <option value="16:00">4 PM</option>
+                <option value="17:00">5 PM</option>
+                <option value="18:00">6 PM</option>
+                <option value="19:00">7 PM</option>
+                <option value="20:00">8 PM</option>
+            </select>
+            <br>
+            <span  ng-if="!valid()">All fields are required!</span>
+            <input  ng-disabled="!valid()" type = "submit" ng-click = "ready()" value="Continue">
+        </form>
+        <div class="notification" ng-show="!showForm">Table was reserved!</div>
+    </div>
+</div>

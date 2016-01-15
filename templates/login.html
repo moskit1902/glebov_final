@@ -1,0 +1,17 @@
+<div class="breadcrumbs" ncy-breadcrumb></div>
+<div class="register">
+	<form>
+		<h3>Welcome to Royal House!</h3>
+		<p>User email</p>
+		<input type="email" ng-model="userInput.userEmail" onkeydown="if (event.keyCode == 13) {document.getElementById('login').click()}">
+		<p>User password</p>
+		<input type="password" ng-model="userInput.userPass" onkeydown="if (event.keyCode == 13) {document.getElementById('login').click()}">
+		<a href="#/register">New account</a>
+		<input type="button" id="login" ng-click="login()" value="Log in">
+	</form>
+</div>
+
+
+
+
+

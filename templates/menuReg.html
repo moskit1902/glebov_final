@@ -1,0 +1,44 @@
+<div class="breadcrumbs" ncy-breadcrumb></div>
+<input type="text" ng-model="query" class="filter" placeholder=" Quick filter">
+<div class="clear-fix"></div>
+<div class="nav">
+	<ul>
+		<li><span ng-if="!showSubmenu" ng-click="toggle()">&#9658;</span>
+			<span ng-if="showSubmenu" ng-click="toggle()">&#9660;</span>
+			<a ui-sref="menu">Menu</a>
+			<ul ng-if="showSubmenu">
+				<li><a ui-sref="menuReg" class="opened">Regular menu</a>
+				<li><a ui-sref="menuBan">Banquet menu</a>
+				<li><a ui-sref="menuWine">Wine list</a>
+			</ul>
+		<li><a ui-sref="reservation">Reservation</a>
+		<li><a ui-sref="gallery">Gallery</a>
+		<li><a ui-sref="events">Events</a>
+		<li><a ui-sref="about">About us</a>
+		<li><a ui-sref="contacts">Contacts</a>
+	</ul>	
+</div>
+
+<div class="menu-list-wrapper">
+	<p class='menu-header'>
+		<span ng-click="sort('position')" ng-class="{'sorted': sortField == 'position'}">Name<a ng-class="{'up':reverse, 'down':!reverse}"></a></span>
+		<span ng-click="sort('price')" ng-class="{'sorted': sortField == 'price'}">Price<a ng-class="{'up':!reverse, 'down':reverse}"></a></span>
+	</p>
+	<div class='menu-list'>
+		<ul>
+			<li class='menu-item' ng-repeat="item in regular | orderBy:sortField:reverse | filter:query  | startFrom: startingItem() | limitTo: itemsPerPage">
+				<img ng-src= "{{ item.imgSrc }}" alt="{{ item.position}}">
+				<h3>{{ item.position }}</h3>
+				<p>{{ item.description }}</p>
+				<span class="price">{{ item.price | currency }}</span>
+				<div class="clear-fix"></div>
+			</li>
+		</ul>
+	</div>
+	<div class="pagination">
+	    <input type="button" ng-class="firstPage() ? 'disabled-pagin-page' : 'pagin-page'" value="<<" ng-disabled="firstPage()" ng-click="pageBack()"><!--
+	    --><input type="button" ng-repeat="numberOfPage in pages()" ng-click="pageSet(numberOfPage)" ng-class="numberOfPage==currentPage+1 ? 'active-pagin-page' : 'pagin-page'" ng-disabled="numberOfPage==currentPage+1" value="{{ numberOfPage }}"><!--
+	    --><input type="button"  ng-class="lastPage() ? 'disabled-pagin-page' : 'pagin-page'" ng-disabled="lastPage()" ng-click="pageForward()" value=">>">
+    </div>
+</div>
+

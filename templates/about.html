@@ -1,0 +1,36 @@
+<div class="breadcrumbs" ncy-breadcrumb></div>
+<h2 class="content-header">About us</h2>
+<div class="clear-fix"></div>
+<div class="nav">
+	<ul>
+		<li><span ng-if="!showSubmenu" ng-click="toggle()">&#9658;</span>
+			<span ng-if="showSubmenu" ng-click="toggle()">&#9660;</span>
+			<a ui-sref="menu">Menu</a>
+			<ul ng-if="showSubmenu">
+				<li><a ui-sref="menuReg">Regular menu</a>
+				<li><a ui-sref="menuBan">Banquet menu</a>
+				<li><a ui-sref="menuWine">Wine list</a>
+			</ul>
+		<li><a ui-sref="reservation">Reservation</a>
+		<li><a ui-sref="gallery">Gallery</a>
+		<li><a ui-sref="events">Events</a>
+		<li><a ui-sref="about" class="opened">About us</a>
+		<li><a ui-sref="contacts">Contacts</a>
+	</ul>	
+</div>
+<div class="about-wrapper">
+	<div class="back">
+		<div class="about-content">
+			<img src="img/promo/about_us.jpg" alt="about us">
+			<p>Restaurant Royal House a new high-quality resting-place in the city center, a creative menu of the restaurant is non-standard mixture of different types of relaxing promotes to visit the restaurant for business meetings and for noisy party. VIP-hall of the restaurant will attract guests of all ages by a pleasant atmosphere, who can understand the real taste of life. Covered summer terrace gives you a possibility to monitor the city life in a relaxing lounge hall.</p>
+			<div class="clear-fix"></div>
+		</div>
+		<div class="about-content">
+			<img src="img/promo/about_us_table.jpg" alt="about us exterior">
+			<p>Karaoke in the evening will confuse all music-lovers of huge proposition in karaoke with back-vocals. The restaurant offers dishes from the menu of the best European chefs in Italy, France, the same way in restaurant's menu presented an extensive assortment of sushi menu. We will be glad to see you in our restaurant again!</p>
+			<div class="clear-fix"></div>
+		</div>
+	</div>
+</div>
+<script src="js/parallax.js"></script>
+

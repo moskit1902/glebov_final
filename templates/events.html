@@ -1,0 +1,39 @@
+<div class="breadcrumbs" ncy-breadcrumb></div>
+<h2 class="content-header">Upcoming events</h2>
+<div class="clear-fix"></div>
+<div class="nav">
+	<ul>
+		<li><span ng-if="!showSubmenu" ng-click="toggle()">&#9658;</span>
+			<span ng-if="showSubmenu" ng-click="toggle()">&#9660;</span>
+			<a ui-sref="menu">Menu</a>
+			<ul ng-if="showSubmenu">
+				<li><a ui-sref="menuReg">Regular menu</a>
+				<li><a ui-sref="menuBan">Banquet menu</a>
+				<li><a ui-sref="menuWine">Wine list</a>
+			</ul>
+		<li><a ui-sref="reservation">Reservation</a>
+		<li><a ui-sref="gallery">Gallery</a>
+		<li><a ui-sref="events" class="opened">Events</a>
+		<li><a ui-sref="about">About us</a>
+		<li><a ui-sref="contacts">Contacts</a>
+	</ul>	
+</div>
+<ul class="events">
+	<li>
+		<img src="img/events/event1.jpg" alt="personal">
+		<a ui-sref="about">Beer and cheese</a>
+	</li>
+	<li>
+		<img src="img/events/event2.jpg" alt="healthy_food">
+		<a ui-sref="about">Fall festival</a>
+	</li>
+	<li>
+		<img src="img/events/event3.jpg" alt="wine">
+		<a ui-sref="about">Sing your heart on</a>
+	</li>
+	<li>
+		<img src="img/events/event4.jpg" alt="wine">
+		<a ui-sref="about">Mexican fiesta</a>
+	</li>
+	<div class="clear-fix"></div>
+</ul>

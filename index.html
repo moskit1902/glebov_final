@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Restaurant">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Royal House</title>
+	<!--[if lt IE 9]>
+	<script src="lib/es5-shim.min.js"></script>
+	<script src="lib/es5-sham.min.js"></script>
+	<script src="lib/IE8pol.js"></script>
+	<script src="lib/getComputedStyle.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-ui-router.min.js"></script>
+	<script src="lib/angular-breadcrumb.min.js"></script>
+	<script src="lib/firebase.js"></script>
+    <script src="lib/angularfire.js"></script>
+</head>
+<body onresize="resize()">
+	<div id="header" ng-controller="mainCtrl">
+		<div class="wrapper-top">
+			<div class="container-top">
+				<img src="img/telephone.png" class="tel" alt="telephone">
+				<span class="number">(123)987-65-43</span>
+				<a ui-sref="home" class="logo"><img src="img/logo.png" alt="logo"></a>
+				<a class="login" ui-sref="login" ng-if="!userEmailCheck()">Log in</a>
+				<a class="login" ng-click="logout()" ng-if="userEmailCheck()">Sign out</a>
+				<span ng-if="userEmailCheck()" class="user-email">Welcome, <strong>{{ userEmail }}</strong></span>
+				<form class="search">
+				<input type="text" id="search" placeholder=" Search..." onkeydown="if (event.keyCode == 13) {document.querySelector('.search a').click()}">
+				<a ui-sref="search">go</a>
+				</form>
+				<a href="" class="menu-btn"></a>
+				<ul class="menu">
+					<li><a ui-sref="menu">Menu</a>
+						<ul class="submenu">
+							<li><a ui-sref="menuReg">Regular menu</a>
+							<li><a ui-sref="menuBan">Banquet menu</a>
+							<li><a ui-sref="menuWine">Wine list</a>
+						</ul>
+					<li><a ui-sref="reservation">Reservation</a>
+					<li><a ui-sref="gallery">Gallery</a>
+					<li><a ui-sref="events">Events</a>
+					<li><a ui-sref="about">About us</a>
+					<li><a ui-sref="contacts">Contacts</a>
+				</ul>
+			</div>
+		</div>
+		<div class="slides-cont">
+			<ul class="slides">
+			    <li><img src="img/slider/1-1.jpg" alt="slide1">
+			    <li><img src="img/slider/1-2.jpg" alt="slide2">
+			    <li><img src="img/slider/1-3.jpg" alt="slide3">
+			</ul>
+			<input type="button" class="slider-nav next">
+			<input type="button" class="slider-nav prev">
+		</div>
+		<div class="edge"></div>
+	</div>
+	<div id="separator"></div>
+	<div id="content">
+		<div class="ui" ui-view=""></div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>Salle des Étoiles 26 Av. Princesse Grace, 98000 Monaco. tel (123)987-65-43</p>
+			<a href="https://www.instagram.com/" class="social instagram"></a>
+			<a href="https://twitter.com/" class="social twitter"></a>
+			<a href="https://www.facebook.com/" class="social facebook"></a>
+		</div>
+	</div>
+	<script src="js/resize.js"></script>
+	<script src="js/style.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/angular/app.js"></script>
+	<script src="js/angular/controllers/main.js"></script>
+	<script src="js/angular/controllers/search.js"></script>
+	<script src="js/angular/controllers/reserve.js"></script>	
+	<script src="js/angular/controllers/restaurantCtrlMenu.js"></script>
+	<script src="js/angular/controllers/gallery.js"></script>
+	<script src="js/angular/controllers/register.js"></script>
+	<script src="js/angular/controllers/login.js"></script>
+</body>
+</html>

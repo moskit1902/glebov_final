@@ -1,0 +1,16 @@
+<div class="breadcrumbs" ncy-breadcrumb></div>
+<div class="register">
+	<form action="create()">
+		<h3>New user registration</h3>
+		<p>User email</p>
+		<input type="email" ng-model="userInput.userEmail" onkeydown="if (event.keyCode == 13) {document.getElementById('register').click()}">
+		<p>User password</p>
+		<input type="password" ng-model="userInput.userPass" onkeydown="if (event.keyCode == 13) {document.getElementById('register').click()}">
+		<input type="button" id="register" ng-click="create()" value="Register">
+	</form>
+</div>
+
+
+
+
+

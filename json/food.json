@@ -1,0 +1,294 @@
+{
+	
+	"regular": 
+		[
+			{ 
+				"imgSrc": "img/food/1.jpg",
+				"position": "Grilled Marinated Eggplant", 
+				"description": "Garnished with potatoes, onion and lemon.", 
+				"price": 12
+				},
+			{ 
+				"imgSrc": "img/food/2.jpg", 
+				"position": "Royal Smoked Fish Platter", 
+				"description": "Assorted premium cured and smoked meats.", 
+				"price": 11
+				},
+			{ 
+				"imgSrc": 
+				"img/food/3.jpg", 
+				"position": "Smoked Meat Antipasto", 
+				"description": "Chicken Breast with bell peppers and herbs.", 
+				"price": 8
+				},
+			{ 
+				"imgSrc": "img/food/4.jpg", 
+				"position": "Italian Bruschetta Gotru", 
+				"description": "Greens with Romanov Dressing.", 
+				"price": 6},
+			{ 
+				"imgSrc": "img/food/5.jpg", 
+				"position": "Moldavian Pickled Vegetables", 
+				"description": "Grilled Chicken with Shitake Mushrooms.", 
+				"price": 15
+				},
+			{ 
+				"imgSrc": "img/food/6.jpg", 
+				"position": "Greek Salad with Olives", 
+				"description": "Potatoes with pan seared Shitake Mushrooms.", 
+				"price": 12
+				},
+			{ 
+				"imgSrc": "img/food/7.jpg", 
+				"position": "Grilled Chicken Breast", 
+				"description": "Baked Mushrooms with Cream sauce.", 
+				"price": 10
+				},
+			{ 
+				"imgSrc": "img/food/8.jpg", 
+				"position": "Red Caviar served with Blini", 
+				"description": "Hen marinated with garlic spice.", 
+				"price": 9
+				},
+			{ 
+				"imgSrc": "img/food/9.jpg", 
+				"position": "Jumbo Shrimp Cocktail", 
+				"description": "Mussels in a cream sauce.", 
+				"price": 16
+				},
+			{ 
+				"imgSrc": "img/food/10.jpg", 
+				"position": "Beef Tongue Salad Fopu", 
+				"description": "Breast with bell peppers and herbs.", 
+				"price": 7
+				},
+			{ 
+				"imgSrc": "img/food/11.jpg", 
+				"position": "Baked Potatoes with pan seared",
+				"description": "Garnished with potatoes, onion and lemon.", 
+				"price": 5
+				},
+			{ 
+				"imgSrc": "img/food/12.jpg", 
+				"position": "Piroshky with Ground Chicken", 
+				"description": "Assorted premium cured and smoked meats.", 
+				"price": 11
+				}
+			]
+	,
+
+	"banquet":
+		[
+			{ 
+				"imgSrc": "img/food/13.jpg", 
+				"position": "Grilled Marinated Eggplant", 
+				"description": "Garnished with potatoes, onion and lemon.", 
+				"price": 12
+				},
+			{ 
+				"imgSrc": "img/food/14.jpg", 
+				"position": "Royal Smoked Fish Platter", 
+				"description": "Assorted premium cured and smoked meats.", 
+				"price": 11
+				},
+			{ 
+				"imgSrc": "img/food/15.jpg", 
+				"position": "Smoked Meat Antipasto", 
+				"description": "Chicken Breast with bell peppers and herbs.", 
+				"price": 8
+				},
+			{ 
+				"imgSrc": "img/food/20.jpg", 
+				"position": "Italian Bruschetta Gotru", 
+				"description": "Greens with Romanov Dressing.", 
+				"price": 6
+				},
+			{ 
+				"imgSrc": "img/food/21.jpg", 
+				"position": "Moldavian Pickled Vegetables", 
+				"description": "Grilled Chicken with Shitake Mushrooms.", 
+				"price": 15
+				},
+			{ 
+				"imgSrc": "img/food/16.jpg", 
+				"position": "Greek Salad with Olives", 
+				"description": "Potatoes with pan seared Shitake Mushrooms.", 
+				"price": 12
+				},
+			{
+				 "imgSrc": "img/food/17.jpg", 
+				 "position": "Grilled Chicken Breast", 
+				 "description": "Baked Mushrooms with Cream sauce.", 
+				 "price": 10
+				 },
+			{ 
+				"imgSrc": "img/food/18.jpg", 
+				"position": "Red Caviar served with Blini", 
+				"description": "Hen marinated with garlic spice.", 
+				"price": 9
+				},
+			{ 
+				"imgSrc": "img/food/19.jpg", 
+				"position": "Jumbo Shrimp Cocktail", 
+				"description": "Mussels in a cream sauce.", 
+				"price": 16
+				},
+			{ 
+				"imgSrc": "img/food/22.jpg", 
+				"position": "Beef Tongue Salad Fopu", 
+				"description": "Breast with bell peppers and herbs.", 
+				"price": 7
+				},
+			{ 
+				"imgSrc": "img/food/23.jpg", 
+				"position": "Baked Potatoes with pan seared", 
+				"description": "Garnished with potatoes, onion and lemon.", 
+				"price": 5
+				},
+			{ 
+				"imgSrc": "img/food/24.jpg", 
+				"position": "Piroshky with Ground Chicken", 
+				"description": "Assorted premium cured and smoked meats.", 
+				"price": 11
+				}
+		]
+	,
+
+	"wine":
+		[
+		
+			{ 
+				"imgSrc": "img/wine/1.jpg", 
+				"position": "Chenet J.P.", "description": 
+				"Garnished with potatoes, onion and lemon.", 
+				"price": 12
+				},
+			{ 
+				"imgSrc": "img/wine/2.jpg", 
+				"position": "Bulvarie Muscat", 
+				"description": "Assorted premium cured and smoked meats.", 
+				"price": 11
+				},
+			{ 
+				"imgSrc": "img/wine/3.jpg", 
+				"position": "Crimean Riviera Inkerman", 
+				"description": "Chicken Breast with bell peppers and herbs.", 
+				"price": 8
+				},
+			{ 
+				"imgSrc": "img/wine/4.jpg", 
+				"position": "Rieselne Moselland", 
+				"description": "Greens with Romanov Dressing.", 
+				"price": 6
+				},
+			{ 
+				"imgSrc": "img/wine/5.jpg", 
+				"position": "Chiarli Lambruscat", 
+				"description": "Grilled Chicken with Shitake Mushrooms.", 
+				"price": 15
+				},
+			{ 
+				"imgSrc": "img/wine/6.jpg", 
+				"position": "Cinzano Rosso", "description": 
+				"Potatoes with pan seared Shitake Mushrooms.", 
+				"price": 12
+				},
+			{ 
+				"imgSrc": "img/wine/7.jpg", 
+				"position": "Bachchysarai Cabernet", 
+				"description": "Baked Mushrooms with Cream sauce.", 
+				"price": 10
+				},
+			{ 
+				"imgSrc": "img/wine/8.jpg", 
+				"position": "Danese Poro Brusco", 
+				"description": "Hen marinated with garlic spice.", 
+				"price": 9
+				},
+			{ 
+				"imgSrc": "img/wine/9.jpg", 
+				"position": "Busso Inkerman", 
+				"description": "Mussels in a cream sauce.", 
+				"price": 16
+				},
+			{ 
+				"imgSrc": "img/wine/10.jpg", 
+				"position": "Donelli Lambrusco", 
+				"description": "Breast with bell peppers and herbs.", 
+				"price": 7
+				},
+			{ 
+				"imgSrc": "img/wine/11.jpg", 
+				"position": "Fanagoria Black Doctor", 
+				"description": "Garnished with potatoes, onion and lemon.", 
+				"price": 5
+				},
+			{ 
+				"imgSrc": "img/wine/6.jpg", 
+				"position": "Cinzano Rosso", "description": 
+				"Potatoes with pan seared Shitake Mushrooms.", 
+				"price": 12
+				},
+			{ 
+				"imgSrc": "img/wine/7.jpg", 
+				"position": "Bachchysarai Cabernet", 
+				"description": "Baked Mushrooms with Cream sauce.", 
+				"price": 10
+				},
+			{ 
+				"imgSrc": "img/wine/8.jpg", 
+				"position": "Danese Poro Brusco", 
+				"description": "Hen marinated with garlic spice.", 
+				"price": 9
+				},
+			{ 
+				"imgSrc": "img/wine/9.jpg", 
+				"position": "Busso Inkerman", 
+				"description": "Mussels in a cream sauce.", 
+				"price": 16
+				},
+			{ 
+				"imgSrc": "img/wine/10.jpg", 
+				"position": "Donelli Lambrusco", 
+				"description": "Breast with bell peppers and herbs.", 
+				"price": 7
+				},
+			{ 
+				"imgSrc": "img/wine/11.jpg", 
+				"position": "Fanagoria Black Doctor", 
+				"description": "Garnished with potatoes, onion and lemon.", 
+				"price": 5
+				},
+			{ 
+				"imgSrc": "img/wine/8.jpg", 
+				"position": "Danese Poro Brusco", 
+				"description": "Hen marinated with garlic spice.", 
+				"price": 9
+				},
+			{ 
+				"imgSrc": "img/wine/9.jpg", 
+				"position": "Busso Inkerman", 
+				"description": "Mussels in a cream sauce.", 
+				"price": 16
+				},
+			{ 
+				"imgSrc": "img/wine/10.jpg", 
+				"position": "Donelli Lambrusco", 
+				"description": "Breast with bell peppers and herbs.", 
+				"price": 7
+				},
+			{ 
+				"imgSrc": "img/wine/11.jpg", 
+				"position": "Fanagoria Black Doctor", 
+				"description": "Garnished with potatoes, onion and lemon.", 
+				"price": 5
+				},
+			{ 
+				"imgSrc": "img/wine/12.jpg", 
+				"position": "Riunine Sweet Red", 
+				"description": "Assorted premium cured and smoked meats.", 
+				"price": 11
+			}
+		]
+	
+}

@@ -1,0 +1,35 @@
+<div class="breadcrumbs" ncy-breadcrumb></div>
+<h2 class="content-header">Search results</h2>
+<div class="clear-fix"></div>
+<div class="nav">
+	<ul>
+		<li><span ng-if="!showSubmenu" ng-click="toggle()">&#9658;</span>
+			<span ng-if="showSubmenu" ng-click="toggle()">&#9660;</span>
+			<a ui-sref="menu">Menu</a>
+			<ul ng-if="showSubmenu">
+				<li><a ui-sref="menuReg">Regular menu</a>
+				<li><a ui-sref="menuBan">Banquet menu</a>
+				<li><a ui-sref="menuWine">Wine list</a>
+			</ul>
+		<li><a ui-sref="reservation">Reservation</a>
+		<li><a ui-sref="gallery">Gallery</a>
+		<li><a ui-sref="events">Events</a>
+		<li><a ui-sref="about">About us</a>
+		<li><a ui-sref="contacts">Contacts</a>
+	</ul>	
+</div>
+<div class="menu-list-wrapper">
+	<div class='menu-list'>
+		<p ng-if="show()" class="not-found">Sorry, but nothing found to your request</p>
+		<ul>
+			<li class='menu-item' ng-repeat="item in items">
+				<img ng-src= "{{ item.imgSrc }}" alt="{{ item.position}}">
+				<h3>{{ item.position }}</h3>
+				<p>{{ item.description }}</p>
+				<span class="price">{{ item.price | currency }}</span>
+				<div class="clear-fix"></div>
+			</li>
+		</ul>
+	</div>
+</div>
+

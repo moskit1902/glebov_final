@@ -1,0 +1,23 @@
+<div class="breadcrumbs" ncy-breadcrumb></div>
+<div class="clear-fix"></div>
+<div class="nav">
+	<ul>
+		<li><span ng-if="!showSubmenu" ng-click="toggle()">&#9658;</span>
+			<span ng-if="showSubmenu" ng-click="toggle()">&#9660;</span>
+			<a ui-sref="menu">Menu</a>
+			<ul ng-if="showSubmenu">
+				<li><a ui-sref="menuReg">Regular menu</a>
+				<li><a ui-sref="menuBan">Banquet menu</a>
+				<li><a ui-sref="menuWine">Wine list</a>
+			</ul>
+		<li><a ui-sref="reservation">Reservation</a>
+		<li><a ui-sref="gallery">Gallery</a>
+		<li><a ui-sref="events">Events</a>
+		<li><a ui-sref="about">About us</a>
+		<li><a ui-sref="contacts"  class="opened">Contacts</a>
+	</ul>	
+</div>
+<div class="contacts">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5764.567078585295!2d7.436297124481492!3d43.74620848837658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x086d104ab1fa681b!2sSalle+des+%C3%89toiles!5e0!3m2!1sru!2sua!4v1452018927210" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<p>Salle des Étoiles 26 Av. Princesse Grace, 98000 Monaco. tel (123)987-65-43</p>
+</div>
