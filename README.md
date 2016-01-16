@@ -1,5 +1,7 @@
 Final single page application project
 
+To see how it works, visit https://glebov-project.herokuapp.com/
+
  - Libraries and features were used:
    - AngularJS (with modules);
    - jQuery;
